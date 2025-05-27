@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="card">
+            <h1>OTP Generator</h1>
+            <div class="input"><input type="text" placeholder="Click To Generate OTP" value=""/></div>
+            <button onclick="generate()">Generate</button>
+        </div>
+    </div>
+    <script>
+        var inp=document.querySelector('input');
+        function generate(){
+            var otp="";
+            for(let i=0;i<4;i++){
+                otp+=Math.floor(Math.random()*10);
+            }
+            inp.value=otp;
+        }
+    </script>
+</body>
+</html>

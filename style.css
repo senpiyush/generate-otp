@@ -1,0 +1,66 @@
+@font-face {
+    font-family: mouldy;
+    src: url(MouldyCheeseRegular-WyMWG.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    background: linear-gradient(120deg,blue,violet);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    height: 70vh;
+    width: 70vw;
+    background-color: rgba(245, 245, 220, 0.342);
+}
+h1{
+    margin-top: 5vh;
+   text-align: center;
+   font-family: mouldy;
+   font-size: 4vw;
+}
+#card .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    margin-top: 3vw;
+}
+#card .input input{
+    height: 4vw;
+    width: 20vw;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 2.5vw;
+    padding-top: 2.2vh;
+    text-align: center;
+    background-color: rgba(28, 28, 36, 0.322);
+}
+#card .input input::placeholder{
+    font-size: 4vh;
+    text-align:center;
+}
+button{
+    height: 4vw;
+    width: 12vw;
+    left: 43vw;
+    position: absolute;
+    margin-top: 3vw;
+    border: 10px double white;
+    background-color: green;
+    color: #fff;
+    border-radius: 2vw;
+}
